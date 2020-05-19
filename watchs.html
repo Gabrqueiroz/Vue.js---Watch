@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watchrs</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="nome" placeholder="Nome">
+        <textarea v-model="mensagem"  cols="30" rows="10"></textarea>
+        <p>{{nome}}</p>
+        <p style="white-space:pre-line;">{{mensagem}}</p> <!--Precinando enter quebra Linha -->
+
+    </div>  
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        new Vue({
+          el:'#app',
+          data: {
+           nome: '',
+           mensagem:''
+          } 
+             
+          
+        })
+    </script>
+</body>
+</html>
